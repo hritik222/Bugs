@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/*css reset*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: postonbillscolomba;
+    src: url(/assets/PlugIn/post-no-bills/postnobillscolombo-extrabold.ttf);
+ }
+
+body{
+    background-color: #03021C;
+    font-family: 'Poppins', sans-serif;
+}
+
+#header {
+    width: 100%;
+    /* height: 70px; */
+    background-image: url(../images/bannerimg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-color: #0F0C42;
+    box-shadow: 0 2px 20px 0 #00000063;
+    z-index: 99999;
+    position: fixed;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.nav-bx {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-bx ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-bx ul li {
+    display: inline-block;
+    width: max-content;
+    padding: 6px 12px;
+}
+.nav-bx ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+}
+.nav-bx ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+.nav-bx ul li a:hover::after{
+    width: 100%;
+}
+
+/* Navigation end here */
+
+#hero {
+    width: 100%;
+    height: 100vh;
+}
+.vectors {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.vec-1 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.vec-2 {
+    width: 60%;
+    position: absolute;
+    right: 75px;
+    bottom: 0;
+}
+
